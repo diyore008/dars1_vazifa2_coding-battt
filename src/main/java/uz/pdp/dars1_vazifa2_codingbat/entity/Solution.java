@@ -1,4 +1,4 @@
-package uz.pdp.dars1_vazifa2_codingbat.entity.entity;
+package uz.pdp.dars1_vazifa2_codingbat.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -17,6 +17,6 @@ public class Solution {
     @Column(nullable = false, unique = true)
     private String solutionContent;
 
-    @Column(nullable = false,unique = true)
-    private Integer taskId;
+    @OneToOne
+    private TaskContent taskContent;
 }

@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class Dars1Vazifa2CodingBatApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(Dars1Vazifa2CodingBatApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(Dars1Vazifa2CodingBatApplication.class, args);
+    }
 
 }

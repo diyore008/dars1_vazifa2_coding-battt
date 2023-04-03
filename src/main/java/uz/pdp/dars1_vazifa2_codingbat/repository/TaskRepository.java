@@ -1,2 +1,7 @@
-package uz.pdp.dars1_vazifa2_codingbat.repository;public interface TaskRepository {
+package uz.pdp.dars1_vazifa2_codingbat.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import uz.pdp.dars1_vazifa2_codingbat.entity.Task;
+
+public interface TaskRepository extends JpaRepository<Task, Integer> {
 }

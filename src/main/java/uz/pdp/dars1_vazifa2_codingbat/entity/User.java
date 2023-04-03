@@ -1,4 +1,4 @@
-package uz.pdp.dars1_vazifa2_codingbat.entity.entity;
+package uz.pdp.dars1_vazifa2_codingbat.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity
+@Entity(name = "users")
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

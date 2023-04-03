@@ -1,4 +1,4 @@
-package uz.pdp.dars1_vazifa2_codingbat.entity.entity;
+package uz.pdp.dars1_vazifa2_codingbat.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -18,7 +18,7 @@ public class Topic {
     private String name;
 
     @ManyToOne
-    private Langunagee langunageeId;
+    private Language languageId;
 
     private boolean checkMark;
 

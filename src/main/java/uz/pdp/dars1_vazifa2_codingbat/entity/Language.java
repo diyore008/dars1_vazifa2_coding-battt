@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class Langunagee {
+public class Language {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;

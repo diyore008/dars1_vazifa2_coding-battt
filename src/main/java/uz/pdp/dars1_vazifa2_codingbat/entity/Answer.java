@@ -1,4 +1,4 @@
-package uz.pdp.dars1_vazifa2_codingbat.entity.entity;
+package uz.pdp.dars1_vazifa2_codingbat.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -14,11 +14,12 @@ public class Answer {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(nullable = false)
-    private Integer userId;
+    @ManyToOne
+    private User user;
+
+    @OneToOne
+    private Task task;
 
     @Column(nullable = false)
-    private Integer taskId;
-    @OneToOne
-    private AnswerContent answerContent;
+    private String answerContent;
 }
